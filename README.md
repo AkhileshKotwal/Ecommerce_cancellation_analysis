@@ -27,6 +27,23 @@ project/
 └── ecommerce_clean.db                <- SQLite DB with cleaned tables loaded
 ```
 
+## Key charts
+
+**All six tests, one view — only province is statistically significant:**
+![Significance summary](charts/07_significance_summary.png)
+
+**The one real finding — cancellation/refund rate by province:**
+![Cancellation rate by province](charts/04_state_cancel_rate.png)
+
+**Two unexplained transaction volume shifts:**
+![Monthly transaction volume](charts/06_monthly_volume.png)
+
+**Monthly revenue lost to cancellations/refunds:**
+![Monthly lost revenue](charts/05_monthly_lost_revenue.png)
+
+**Discount depth vs. cancellation rate (raw pattern, not independently significance-tested):**
+![Discount vs cancel rate](charts/01_discount_vs_cancel_rate.png)
+
 ## Data source
 Raw data: `customers.csv` (1,010 rows) and `transactions.csv` (8,199 rows), joined on `customer_id`. Source is a Kaggle "messy e-commerce" practice dataset with intentionally injected data quality issues (missing values, duplicates, inconsistent fields).
 
